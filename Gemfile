@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.3.0'
 
 gem 'puma'
+gem 'rack-timeout'
 
 # rails/api
 gem 'rails', '4.2.5'
