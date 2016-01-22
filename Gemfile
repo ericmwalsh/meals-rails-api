@@ -14,6 +14,7 @@ gem 'pg'
 
 group :development do
   gem 'spring'
+  gem 'annotate'
 end
 
 group :production do
