@@ -7,6 +7,11 @@ gem 'rack-timeout'
 # rails/api
 gem 'rails', '4.2.5'
 gem 'rails-api'
+gem 'jsonapi-resources'
+
+# caching
+gem 'redis'
+gem 'redis-rails'
 
 # database
 gem 'pg'

@@ -1,7 +1,5 @@
 module V1
-  class MealsController < ApplicationController
-    def index
-      render json: Meal.all
-    end
+  class MealsController < V1::ApplicationController
+
   end
 end
