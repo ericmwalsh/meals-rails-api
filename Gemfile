@@ -22,6 +22,10 @@ group :development do
   gem 'annotate'
 end
 
+group :test do
+  gem 'mock_redis'
+end
+
 group :production do
   gem 'rails_12factor'
 end

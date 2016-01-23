@@ -56,6 +56,7 @@ GEM
     mime-types (2.99)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
+    mock_redis (0.16.0)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     pg (0.18.4)
@@ -133,6 +134,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   jsonapi-resources
+  mock_redis
   pg
   puma
   rack-timeout

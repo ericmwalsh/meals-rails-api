@@ -6,8 +6,8 @@ if ENV["REDISTOGO_URL"]
     password: uri.password,
     timeout: 10.0,
   )
-# elsif Rails.env.test?
-#   REDIS = MockRedis.new
+elsif Rails.env.test?
+  REDIS = MockRedis.new
 else
   REDIS = nil
 end
