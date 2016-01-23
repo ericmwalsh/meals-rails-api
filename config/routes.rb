@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  root to: "v1/meals#index"
   namespace :v1 do
     jsonapi_resources :meals do
       # get 'relationships/dishes', :to => 'dishes#get_related_resources'

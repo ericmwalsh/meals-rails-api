@@ -28,4 +28,7 @@ Rails.application.configure do
 
   # Set REDIS for Dev
   ENV["REDISTOGO_URL"] = Rails.application.secrets.REDISTOGO_URL
+
+  ENV["DEVISE_SECRET_KEY"] = Rails.application.secrets.DEVISE_SECRET_KEY
+  ENV["URL_ROOT"] = "localhost"
 end
