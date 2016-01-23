@@ -12,4 +12,5 @@
 #
 
 class Meal < ActiveRecord::Base
+  RELATIONS = ['dishes']
 end
