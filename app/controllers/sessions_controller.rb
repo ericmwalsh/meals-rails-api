@@ -14,4 +14,7 @@ class SessionsController < Devise::SessionsController
   rescue
     render json: { error: "Incorrect credentials." }, status: 401
   end
+
+  private
+
 end
