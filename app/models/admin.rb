@@ -36,6 +36,14 @@ class Admin < ActiveRecord::Base
     end
   end
 
+  def as_json(options = {})
+    {
+      id: self.id,
+      email: self.email,
+      token: self.authentication_token
+    }
+  end
+
   private
 
   def generate_authentication_token
