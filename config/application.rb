@@ -38,5 +38,13 @@ module MealsRailsApi
     config.cache_store = :redis_store,
         "#{ENV["REDISTOGO_URL"]}/0/cache",
         { expires_in: 90.minutes }
+
+    config.middleware.insert_before 0, "Rack::Cors" do
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :post, :options]
+      end
+    end
+
   end
 end

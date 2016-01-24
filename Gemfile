@@ -8,6 +8,7 @@ gem 'rack-timeout'
 gem 'rails', '4.2.5'
 gem 'rails-api'
 gem 'jsonapi-resources'
+gem 'rack-cors', :require => 'rack/cors'
 
 # caching
 gem 'redis'
