@@ -29,6 +29,9 @@ Rails.application.configure do
   # Set REDIS for Dev
   ENV["REDISTOGO_URL"] = Rails.application.secrets.REDISTOGO_URL
 
+  # Set DEVISE for Dev
   ENV["DEVISE_SECRET_KEY"] = Rails.application.secrets.DEVISE_SECRET_KEY
+  ENV["DEVISE_PEPPER"] = Rails.application.secrets.DEVISE_PEPPER
+
   ENV["URL_ROOT"] = "localhost"
 end
