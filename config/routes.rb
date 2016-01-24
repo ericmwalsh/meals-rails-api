@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   # authentication
-  devise_for :admins
+  devise_for :admins, controllers: { sessions: 'sessions' }
 
   root to: "v1/meals#index"
 

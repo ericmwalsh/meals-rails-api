@@ -1,4 +1,9 @@
 Rails.application.configure do
+  # heroku production hotfix for removing secrets.yml (public branch)
+  MealsRailsApi::Application.config.secret_token = ENV["SECRET_TOKEN"]
+  Rails.application.secrets.secret_key_base = ENV["SECRET_KEY_BASE"]
+
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
