@@ -17,9 +17,6 @@ gem 'redis-rails'
 # database
 gem 'pg'
 
-# authentication
-gem 'devise'
-
 group :development do
   gem 'spring'
   gem 'annotate'
