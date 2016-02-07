@@ -30,4 +30,5 @@ Rails.application.configure do
   ENV["REDISTOGO_URL"] = Rails.application.secrets.REDISTOGO_URL
 
   ENV["URL_ROOT"] = "localhost"
+  ENV["RAILS_ENV"] = "development"
 end
